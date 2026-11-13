@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashutosh Agarwal | Software Engineering Student, UNB</title>
+  <meta name="description" content="Ashutosh Agarwal, Software Engineering student at the University of New Brunswick. Résumé, projects, LinkedIn and GitHub.">
+  <meta name="theme-color" content="#FFFFFF">
+  <style>
+    @font-face {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/Inter-Regular.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url("fonts/Inter-Medium.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url("fonts/Inter-SemiBold.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url("fonts/Inter-Bold.woff2") format("woff2");
+    }
+    :root {
+      --teal: #0D5C63;
+      --charcoal: #252424;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.45;
+      background: var(--white);
+      color: var(--charcoal);
+      padding: 20px 20px 16px;
+    }
+    main {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0 0 4px;
+    }
+    .tagline {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--teal);
+      margin: 0 0 6px;
+    }
+    .availability {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin: 0 0 20px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      min-height: 48px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .1s ease, opacity .1s ease, background-color .1s ease;
+    }
+    .nowrap { white-space: nowrap; }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .row .btn {
+      padding: 10px 4px;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+    .save {
+      align-self: center;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--teal);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .save:focus-visible { outline: 3px solid var(--charcoal); outline-offset: 2px; }
+    .btn:active { transform: scale(0.98); opacity: .9; }
+    .btn:focus-visible { outline: 3px solid var(--charcoal); outline-offset: 3px; }
+    .solid {
+      background: var(--teal);
+      color: var(--white);
+      border: 2px solid var(--teal);
+    }
+    .outline {
+      background: var(--white);
+      color: var(--teal);
+      border: 2px solid var(--teal);
+    }
+    .projects {
+      margin-top: 16px;
+      text-align: left;
+    }
+    .projects h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      margin: 0 0 12px;
+    }
+    .project {
+      padding: 12px 0;
+      border-top: 1px solid #e4e4e4;
+    }
+    .project:last-child { padding-bottom: 0; }
+    .project:last-child a.repo { min-height: 44px; }
+    .project h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+    .project p {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .project a.repo {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+    }
+    .project a.repo:focus-visible { outline: 3px solid var(--charcoal); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+      .btn:active { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Ashutosh Agarwal</h1>
+      <p class="tagline">Software Engineering Student, UNB</p>
+      <p class="availability">Seeking a Summer 2027 software engineering <span class="nowrap"><span id="role-type">internship</span>&nbsp;·</span> <span class="nowrap">Graduating&nbsp;2029</span></p>
+      <!-- To change the role type (for example to "co-op"), change only the text inside <span id="role-type">. Leave the rest of the line as it is. -->
+    </header>
+    <nav class="links" aria-label="Contact links">
+      <a class="btn solid" href="resume/Ashutosh-Agarwal-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <div class="row">
+        <a class="btn outline" href="https://www.linkedin.com/in/ashutosh-agarwal-unb/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn outline" href="https://github.com/ashutosh-agarwal-swe" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn outline" href="mailto:ashutosh.agarwal@unb.ca">Email</a>
+      </div>
+      <a class="save" href="contact/ashutosh-agarwal.vcf" download="ashutosh-agarwal.vcf" type="text/vcard">Save contact</a>
+    </nav>
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article class="project">
+        <h3>ESP32 Door Sign</h3>
+        <p>Built on the Arduino framework with TFT_eSPI; shows five colour-coded status signs, switched with one tap.</p>
+        <a class="repo" href="https://github.com/ashutosh-agarwal-swe/esp32-door-sign" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>ESP32 Pomodoro Timer</h3>
+        <p>Built on the Arduino framework with LovyanGFX; shows a large countdown and progress bar, redrawn once a second.</p>
+        <a class="repo" href="https://github.com/ashutosh-agarwal-swe/esp32-pomodoro-timer" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
