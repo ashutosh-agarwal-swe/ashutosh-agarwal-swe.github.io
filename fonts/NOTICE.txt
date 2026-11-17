@@ -1,0 +1,7 @@
+These Inter static instances were generated from the Inter variable font
+(SIL Open Font License 1.1) for embedding in the card v3 PDF drafts.
+The same files are used on this landing page, converted to WOFF2.
+Source: /usr/share/fonts/truetype/sand-box/google/Inter/
+Weights used: Regular 400, Medium 500, SemiBold 600, Bold 700.
+
+See OFL.txt for the licence.
